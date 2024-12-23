@@ -19,7 +19,7 @@
       "depNameTemplate": "chalk",
       "datasourceTemplate": "npm",
       "name": "chalk-manager"
-    },
+    }
   ],
   "packageRules": [
     {
@@ -27,8 +27,8 @@
       "groupSlug": "custom-manager-group",
       "matchManagers": [
         "custom.xmldoc-manager",
-        "custom.chalk-manager",
+        "custom.chalk-manager"
       ]
     }
-  ],
+  ]
 }
