@@ -1,0 +1,34 @@
+{
+   "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [ "file.txt" ],
+      "matchStrings": [
+        "xmldoc=(?<currentValue>.*)"
+      ],
+      "depNameTemplate": "xmldoc",
+      "datasourceTemplate": "npm",
+      "name": "xmldoc-manager"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [ "file.txt" ],
+      "matchStrings": [
+        "chalk=(?<currentValue>.*)"
+      ],
+      "depNameTemplate": "chalk",
+      "datasourceTemplate": "npm",
+      "name": "chalk-manager"
+    },
+  ],
+  "packageRules": [
+    {
+      "groupName": "customManager group",
+      "groupSlug": "custom-manager-group",
+      "matchManagers": [
+        "custom.xmldoc-manager",
+        "custom.chalk-manager",
+      ]
+    }
+  ],
+}
